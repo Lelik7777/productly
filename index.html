@@ -6,34 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./src/assets/images/productly.png"
+      href="./src/assets/icons/Bitmap.png"
       type="image/x-icon"
     />
     <title>Productly</title>
   </head>
   <body>
-
     <header class="header">
       <div class="wrapper header__wrapper">
         <div class="logo header__logo">
-          <span class="icon__logo"></span>
+          <span class="icon icon-logo"></span>
         </div>
-          <nav class="navigation header__navigation">
-            <ul class="navigation__items">
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Home</a>
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Service</a>
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">About</a>
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Product</a>
-              </li>
-            </ul>
-          </nav>
+        <nav class="navigation header__navigation">
+          <ul class="navigation__items">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Service</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Product</a>
+            </li>
+          </ul>
+        </nav>
         <header__buttons>
           <button class="button button_colored">Sign in</button>
           <button class="button button_colored">Sign up</button>
@@ -42,9 +41,67 @@
     </header>
     <main class="main">
       <section class="promo">
-        <div class="promo__content"></div>
-        <div class="promo__image">
-          <img src="src/assets/images/" alt="">
+        <div class="wrapper promo__wrapper">
+          <div class="promo__content">
+            <h1 class="promo__title">The Design Thinking superpowers</h1>
+            <p class="promo__text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <div class="promo__buttons">
+              <button class="button button_colored">Get started</button>
+              <a href="" class="link-button"
+                >Watch the Video<span class="icon icon-video"></span
+              ></a>
+            </div>
+          </div>
+          <div class="promo__image">
+            <img src="./src/assets/images/promo/promo.png" alt="promo image" />
+          </div>
+        </div>
+      </section>
+      <section class="tools">
+        <div class="wrapper tools__wrapper">
+          <h2 class="tools__title">
+            We design tools to unveil your superpowers
+          </h2>
+          <div class="layout-4-columns">
+            <div class="tool">
+              <div class="tool__icon">
+                <span class="icon icon-square icon-square_purple"> </span>
+              </div>
+              <h4 class="tool__title">First click tests</h4>
+              <p class="tool__text">While most people enjoy casino gambling,</p>
+            </div>
+            <div class="tool">
+              <div class="tool__icon">
+                <span class="icon icon-square icon-square_orange"> </span>
+              </div>
+              <h4 class="tool__title">Design surveys</h4>
+              <p class="tool__text">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </div>
+            <div class="tool">
+              <div class="tool__icon">
+                <span class="icon icon-square icon-square_red"> </span>
+              </div>
+              <h4 class="tool__title">Preference tests</h4>
+              <p class="tool__text">The Myspace page defines the individual.</p>
+            </div>
+            <div class="tool">
+              <div class="tool__icon">
+                <span class="icon icon-square icon-square_blue"> </span>
+              </div>
+              <h4 class="tool__title">Five second tests</h4>
+              <p class="tool__text">
+                Personal choices and the overall personality of the person.
+              </p>
+            </div>
+          </div>
+          <div class="tools__buttons">
+            <button class="button button_colored">Sign Up now</button>
+          </div>
         </div>
       </section>
     </main>
