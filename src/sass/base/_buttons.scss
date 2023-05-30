@@ -1,0 +1,25 @@
+.button {
+  @include font(1.6rem, 2.2rem);
+  padding: 11px 26px;
+  border-radius: 4px;
+  cursor: pointer;
+  @extend %transition;
+
+  &_colored {
+    background-color: $color-primary;
+    color: $color-light;
+    border-color: $color-primary;
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+   
+  &_bordered {
+    color: $color-button;
+    background-color: $color-light;
+    border-color: $color-hover-header;
+    &:hover {
+      background-color: $color-hover-header;
+    }
+  }
+}
