@@ -1,8 +1,18 @@
-
-.navigation__items{
-  display: flex;
-
+.navigation {
+  @include font(1.5rem, 2.8rem);
 }
-.navigation__link{
+.navigation__items {
+  display: flex;
+  gap: 17px;
+  margin: 0;
+}
+.navigation__link {
   text-decoration: none;
+  color: $color-titles;
+  height: 100%;
+  display: inline-block;
+  @extend %transition;
+  &:hover {
+    color: $color-primary;
+  }
 }
