@@ -9,13 +9,22 @@
       href="./src/assets/icons/Bitmap.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Productly</title>
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <div class="wrapper header__wrapper">
         <div class="logo header__logo">
-          <span class="icon icon-logo"></span>
+          <object
+            class="icon-logo"
+            data="./src/assets/icons/Logo.svg"
+            type="image/svg+xml"
+          >
+            Your browser does not support SVG
+          </object>
         </div>
         <nav class="navigation header__navigation">
           <ul class="navigation__items">
@@ -51,8 +60,8 @@
             <div class="promo__buttons">
               <button class="button button_colored">Get started</button>
               <a href="" class="link-button"
-                >Watch the Video<span class="icon icon-video"></span
-              ></a>
+                ><span class="icon icon-video"></span>Watch the Video</a
+              >
             </div>
           </div>
           <div class="promo__image">
@@ -68,14 +77,14 @@
           <div class="layout-4-columns">
             <div class="tool">
               <div class="tool__icon">
-                <span class="icon icon-square icon-square_purple"> </span>
+                <span class="icon icon-square icon-square_arrow"> </span>
               </div>
               <h4 class="tool__title">First click tests</h4>
               <p class="tool__text">While most people enjoy casino gambling,</p>
             </div>
             <div class="tool">
               <div class="tool__icon">
-                <span class="icon icon-square icon-square_orange"> </span>
+                <span class="icon icon-square icon-square_snake"> </span>
               </div>
               <h4 class="tool__title">Design surveys</h4>
               <p class="tool__text">
@@ -84,14 +93,14 @@
             </div>
             <div class="tool">
               <div class="tool__icon">
-                <span class="icon icon-square icon-square_red"> </span>
+                <span class="icon icon-square icon-square_heart"> </span>
               </div>
               <h4 class="tool__title">Preference tests</h4>
               <p class="tool__text">The Myspace page defines the individual.</p>
             </div>
             <div class="tool">
               <div class="tool__icon">
-                <span class="icon icon-square icon-square_blue"> </span>
+                <span class="icon icon-square icon-square_hourglass"> </span>
               </div>
               <h4 class="tool__title">Five second tests</h4>
               <p class="tool__text">
@@ -111,7 +120,7 @@
             Join 40,000+ other marketers and get proven strategies on email
             marketing
           </p>
-          <div class="strategies__tags">
+          <div class="tags strategies__tags">
             <span class="tag tag_colored">All</span>
             <span class="tag tag_bordered">Art</span>
             <span class="tag tag_bordered">Culture</span>
@@ -127,7 +136,7 @@
               <h3 class="strategy__title">
                 Increasing Prosperity With Positive Thinking
               </h3>
-              <div class="strategy__tags">
+              <div class="tags strategy__tags">
                 <span class="tag tag_selected">Art</span>
                 <span class="tag tag_selected">Design</span>
               </div>
@@ -141,7 +150,7 @@
               <h3 class="strategy__title">
                 Motivation Is The First Step To Success
               </h3>
-              <div class="strategy__tags">
+              <div class="tags strategy__tags">
                 <span class="tag tag_selected">Culture</span>
               </div>
             </article>
@@ -154,7 +163,7 @@
               <h3 class="strategy__title">
                 Success Steps For Your Personal Or Business Life
               </h3>
-              <div class="strategy__tags">
+              <div class="tags strategy__tags">
                 <span class="tag tag_selected">Culture</span>
                 <span class="tag tag_selected">Design</span>
                 <span class="tag tag_selected">Art</span>
@@ -172,7 +181,7 @@
                 Success Steps For Your Personal Or Business Life Plus Funny
                 Image on the Back
               </h3>
-              <div class="strategy__tags">
+              <div class="tags strategy__tags">
                 <span class="tag tag_selected">Culture</span>
                 <span class="tag tag_selected">Design</span>
                 <span class="tag tag_selected">Art</span>
@@ -187,7 +196,7 @@
               <h3 class="strategy__title">
                 Increasing Prosperity With Positive Thinking
               </h3>
-              <div class="strategy__tags">
+              <div class="tags strategy__tags">
                 <span class="tag tag_selected">Design</span>
               </div>
             </article>
@@ -202,7 +211,7 @@
               <h3 class="strategy__title">
                 Increasing Prosperity With Positive Thinking
               </h3>
-              <div class="strategy__tags">
+              <div class="tags strategy__tags">
                 <span class="tag tag_selected">Art</span>
                 <span class="tag tag_selected">Design</span>
               </div>
@@ -216,7 +225,7 @@
               <h3 class="strategy__title">
                 Motivation Is The First Step To Success
               </h3>
-              <div class="strategy__tags">
+              <div class="tags strategy__tags">
                 <span class="tag tag_selected">Culture</span>
               </div>
             </article>
@@ -229,7 +238,7 @@
               <h3 class="strategy__title">
                 Success Steps For Your Personal Or Business Life
               </h3>
-              <div class="strategy__tags">
+              <div class="tags strategy__tags">
                 <span class="tag tag_selected">Culture</span>
                 <span class="tag tag_selected">Design</span>
                 <span class="tag tag_selected">Art</span>
@@ -347,8 +356,14 @@
     </main>
     <footer class="footer">
       <div class="wrapper footer__wrapper">
-        <div class="logo header__logo">
-          <span class="icon icon-logo"></span>
+        <div class="footer__logo">
+          <object
+            class="icon-logo"
+            data="./src/assets/icons/Logo.svg"
+            type="image/svg+xml"
+          >
+            Your browser does not support SVG
+          </object>
         </div>
         <div class="layout-3-columns footer__links">
           <div class="links-1">
