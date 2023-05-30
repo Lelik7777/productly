@@ -13,13 +13,28 @@
       background-color: $color-secondary;
     }
   }
-   
+
   &_bordered {
     color: $color-button;
     background-color: $color-light;
     border-color: $color-hover-header;
     &:hover {
       background-color: $color-hover-header;
+    }
+  }
+}
+
+.link-button {
+  text-decoration: none;
+  color: $color-primary;
+  @include font($height: 2.4rem, $weight: 600);
+  @extend %font-secondary;
+    
+  &:hover {
+    color: $color-secondary;
+    text-decoration: underline;
+    .icon-video {
+      background-image: url("../assets/icons/icon_video_hover.svg");
     }
   }
 }
