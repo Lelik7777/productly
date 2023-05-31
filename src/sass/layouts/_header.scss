@@ -10,6 +10,18 @@
 }
 .header__logo {
   display: flex;
+  align-items: center;
+  @include media($tablet) {
+    gap: 37px;
+  }
+  @include media($mobile) {
+    gap: 61px;
+  }
+}
+.icon-logo:hover {
+  filter: invert(69%) sepia(44%) saturate(4334%) hue-rotate(359deg)
+    brightness(101%) contrast(103%);
+  @extend %transition;
 }
 .header__navigation {
   @include media($tablet) {
@@ -19,4 +31,7 @@
 .header__buttons {
   display: flex;
   gap: 14px;
+  @include media($mobile) {
+    display: none;
+  }
 }
