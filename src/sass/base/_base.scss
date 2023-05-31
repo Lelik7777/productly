@@ -1,5 +1,6 @@
 html {
   font-size: $font-size-root;
+  scroll-behavior: smooth;
 }
 .body {
   @include font();
@@ -16,34 +17,34 @@ h5 {
 h1 {
   @extend %font-secondary;
   @include font(4.4rem, 5.4rem, 700);
-  @include media(mobile) {
+  @include media($mobile) {
     @include font(3.2rem, 4.2rem, 700);
   }
 }
 h2 {
   @include font(3.4rem, 4.6rem, 700);
-  @include media(mobile) {
+  @include media($mobile) {
     @include font(2.4rem, 3.3rem, 700);
   }
 }
 h3 {
   @include font(2.4rem, 3.4rem, 700);
-  @include media(mobile) {
+  @include media($mobile) {
     @include font(2.1rem, 3.1rem, 700);
   }
 }
 h4 {
   @include font(2.2rem, 3rem, 600);
-  @include media(mobile) {
-    @include font(2.0rem, 2.7rem, 600);
+  @include media($mobile) {
+    @include font(2rem, 2.7rem, 600);
   }
 }
 h5 {
-  @include font(2.0rem, 3.0rem, 600);
-  @include media(mobile) {
-    @include font(1.8rem, 3.0rem, 600);
+  @include font(2rem, 3rem, 600);
+  @include media($mobile) {
+    @include font(1.8rem, 3rem, 600);
   }
 }
 h6 {
-  @include font($weight:700);
+  @include font($weight: 700);
 }

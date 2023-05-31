@@ -17,3 +17,11 @@
   font-weight: $weight;
   font-style: $style;
 }
+
+@mixin columns($width) {
+  display: flex;
+  justify-content: space-between;
+  > * {
+    flex-basis: $width;
+  }
+}
