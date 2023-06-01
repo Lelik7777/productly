@@ -17,6 +17,9 @@ h5 {
 h1 {
   @extend %font-secondary;
   @include font(4.4rem, 5.4rem, 700);
+  @include media($tablet) {
+    @include font(4.4rem, 5.4rem, 400);
+  }
   @include media($mobile) {
     @include font(3.2rem, 4.2rem, 700);
   }
