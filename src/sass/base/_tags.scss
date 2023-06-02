@@ -1,7 +1,7 @@
 .tags {
   display: inline-block;
   > * {
-    margin-right: 10px;
+    margin-right: 2px;
     &:last-child {
       margin-right: 0;
     }
@@ -19,6 +19,7 @@
   &_colored {
     background-color: $color-primary;
     border: 1px solid $color-primary;
+    color: $color-light;
   }
   &_selected {
     background-color: $color-tag;
