@@ -11,6 +11,26 @@
   margin: 0 0 31px;
 }
 
+.strategy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .strategy__img {
   border-radius: 9px 9px 0;
+  margin: 0 0 24px;
+}
+.strategy__title {
+  margin: 0 0 32px;
+  max-width: 310px;
+}
+.strategy__title_long {
+  max-width: 719px;
+}
+
+.strategy__tags {
+  margin: 0 0 26px 33px;
+  align-self: flex-start;
+
 }
