@@ -1,0 +1,86 @@
+//поскольку макет при разрешении 768px нарушена высота текущего блока,поэтому отступа внимз не делаю,а заменяю на отступ сверху у следующего блока
+.tools {
+  background-image: url("../assets/images/background/Bg-tools.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  @include media($tablet) {
+  }
+}
+.tools__wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 95px;
+  @include media($tablet) {
+    padding-bottom: 54px;
+  }
+  @include media($mobile) {
+    padding-bottom: 44px;
+  }
+}
+.tools__title {
+  text-align: center;
+  max-width: 462px;
+  margin: 0 0 70px;
+  @include media($tablet) {
+    margin: 0 0 50px;
+  }
+}
+
+//the same as 4-columns-layout
+.tools__container {
+  margin: 0 0 60px;
+  flex-wrap: wrap;
+  @include media($tablet) {
+    margin: 0 0 55px;
+    gap: 54px;
+    margin-right: calc(112px - 46px);
+    > * {
+      flex-basis: 44%;
+      text-align: center;
+    }
+  }
+  @include media($mobile) {
+    margin: 0 0 55px;
+    gap: 58px;
+    margin-right: 0;
+    > * {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+}
+.tool {
+  @include media($tablet) {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+.tool__icon {
+  display: flex;
+  margin: 0 0 30px;
+  @include media($tablet) {
+    margin: 0 0 20px;
+  }
+  @include media($mobile) {
+    margin: 0;
+  }
+}
+.tool__title {
+  margin: 0 0 16px;
+  @include media($tablet) {
+    margin: 0 0 6px;
+  }
+  @include media($mobile) {
+    margin: 0;
+  }
+}
+.tool__text {
+  margin: 0;
+}
+.tools__button {
+  margin-left: 16px;
+  padding: 11px 37px;
+}
