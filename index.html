@@ -141,7 +141,7 @@
             <span class="tag tag_bordered">Culture</span>
             <span class="tag tag_bordered">Design</span>
           </div>
-          <div class="layout-3-columns">
+          <div class="layout-3-columns strategies__container">
             <article class="strategy block-shadowed">
               <img
                 src="./src/assets/images/strategies/strategy_1.jpg"
@@ -186,11 +186,16 @@
             </article>
 
             <article class="strategy block-shadowed">
-              <img
-                src="./src/assets/images/strategies/strategy_4.jpg"
-                alt="strategy4"
-                class="strategy__img"
-              />
+              <picture class="strategy__img strategy__img_long">
+                <source
+                  media="(max-width:768px)"
+                  srcset="./src/assets/images/strategies/strategy_4_tablet.jpg"
+                />
+                <img
+                  src="./src/assets/images/strategies/strategy_4.jpg"
+                  alt="strategy4"
+                />
+              </picture>
               <h3 class="strategy__title strategy__title_long">
                 Success Steps For Your Personal Or Business Life Plus Funny
                 Image on the Back
@@ -201,7 +206,7 @@
                 <span class="tag tag_selected">Art</span>
               </div>
             </article>
-            <article class="strategy block-shadowed">
+            <article class="strategy block-shadowed strategy_none">
               <img
                 src="./src/assets/images/strategies/strategy_5.jpg"
                 alt="strategy5"
@@ -215,7 +220,7 @@
               </div>
             </article>
 
-            <article class="strategy block-shadowed">
+            <article class="strategy block-shadowed strategy_none">
               <img
                 src="./src/assets/images/strategies/strategy_1.jpg"
                 alt="strategy1"
@@ -229,7 +234,7 @@
                 <span class="tag tag_selected">Design</span>
               </div>
             </article>
-            <article class="strategy block-shadowed">
+            <article class="strategy block-shadowed strategy_none">
               <img
                 src="./src/assets/images/strategies/strategy_2.jpg"
                 alt="strategy2"
@@ -242,7 +247,7 @@
                 <span class="tag tag_selected">Culture</span>
               </div>
             </article>
-            <article class="strategy block-shadowed">
+            <article class="strategy block-shadowed strategy_none">
               <img
                 src="./src/assets/images/strategies/strategy_3.jpg"
                 alt="strategy3"
@@ -262,7 +267,7 @@
       </section>
       <section class="about-us" id="about-us">
         <div class="wrapper about-us__wrapper">
-          <h3 class="about-us__title">About Us</h3>
+          <h2 class="about-us__title">About Us</h2>
           <div class="about-us__description">
             Your About Us page is vital. It’s often the first stop in any user’s
             journey through a website or blog. It also shouldn’t be their last,
