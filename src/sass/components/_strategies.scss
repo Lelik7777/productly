@@ -4,7 +4,7 @@
     padding: 53px 0 49px;
   }
   @include media($mobile) {
-    padding: 63px 0 0px;
+    padding: 63px 0 40px;
   }
 }
 .strategies__wrapper {
@@ -61,9 +61,10 @@
     max-width: 323px;
   }
   @include media($mobile) {
-  width: 100%;
-    
-    margin: 0 0 26px;
+    width: 333px;
+    max-width: initial;
+    max-height: 171px;
+    margin: 0 0 28px;
   }
 }
 .strategy__img_long {
@@ -78,8 +79,9 @@
     text-align: left;
     flex-grow: 1;
   }
-  @include media($tablet) {
-    margin: 0 0 31px;
+  @include media($mobile) {
+    margin: 0 10px 35px 0;
+
   }
 }
 .strategy__title_long {
@@ -88,6 +90,9 @@
     max-width: 265px;
     overflow: hidden;
     max-height: 94px;
+  }
+  @include media($mobile) {
+    max-height: 68px;
   }
 }
 
