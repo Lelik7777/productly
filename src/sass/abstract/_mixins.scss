@@ -8,6 +8,10 @@
     @media (max-width: $width-content-mobile) {
       @content;
     }
+  } @else {
+    @media (max-width: $resolution) {
+      @content;
+    }
   }
 }
 
