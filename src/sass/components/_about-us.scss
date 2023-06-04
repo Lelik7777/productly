@@ -1,8 +1,10 @@
 .about-us {
-  padding: 0 0 50px;
-  @include media ($mobile){
+  padding: 0 0 101px;
+  @include media($tablet) {
+    padding: 0 0 50px;
+  }
+  @include media($mobile) {
     padding: 0 0 40px;
-
   }
 }
 .about-us__title {
@@ -36,7 +38,6 @@
   }
   @include media($mobile) {
     margin: 0 0 27px;
-
   }
 }
 .employee {
@@ -48,7 +49,6 @@
     flex-basis: 56%;
   }
   @include media($mobile) {
-
     flex-basis: 100%;
   }
 }
