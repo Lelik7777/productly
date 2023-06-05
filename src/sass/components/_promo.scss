@@ -1,9 +1,11 @@
 .promo {
   padding: 30px 0 111px;
+
   @include media($tablet) {
     padding: 0 0 73px;
     overflow: hidden;
   }
+
   @include media($mobile) {
     padding: 12px 0 49px;
   }
@@ -11,9 +13,11 @@
 .promo__wrapper {
   display: flex;
   justify-content: space-between;
+
   @include media($tablet) {
     padding-right: 0;
   }
+
   @include media($mobile) {
     padding-right: 21px;
     flex-flow: column-reverse;
@@ -22,11 +26,13 @@
 .promo__content {
   max-width: 550px;
   padding-top: 83px;
+
   @include media($tablet) {
     flex-shrink: 0;
     max-width: 382px;
     padding-top: 43px;
   }
+
   @include media($mobile) {
     padding-top: 12px;
     text-align: center;
@@ -34,9 +40,11 @@
 }
 .promo__title {
   margin: 0 0 30px;
+
   @include media($tablet) {
     margin: 0 0 26px;
   }
+
   @include media($mobile) {
     margin: 0 0 9px;
   }
@@ -46,6 +54,7 @@
   @extend %font-secondary;
   @include font(1.8rem, 2.8rem);
   margin: 0 0 53px;
+
   @include media($mobile) {
     @include font(1.6rem, 2.4rem);
     margin: 0 0 30px;
@@ -55,6 +64,7 @@
   display: flex;
   gap: 53px;
   align-items: center;
+
   @include media($mobile) {
   flex-flow: column;
   gap:27px;
@@ -65,6 +75,7 @@
 }
 .promo__image {
   display: flex;
+
   @include media($mobile) {
     justify-content: center;
   }
@@ -73,6 +84,7 @@
   @include media($tablet) {
     max-width: 592px;
   }
+  
   @include media($mobile) {
     max-width: 280px;
   }

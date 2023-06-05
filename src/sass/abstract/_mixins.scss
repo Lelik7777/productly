@@ -4,6 +4,7 @@
       @content;
     }
   }
+
   @if $resolution==mobile {
     @media (max-width: $width-content-mobile) {
       @content;
@@ -26,13 +27,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   > * {
     flex-basis: $width;
   }
 }
 
-@mixin hover(){
-  @media (hover:hover) {
+@mixin hover() {
+  @media (hover: hover) {
     @content;
   }
 }

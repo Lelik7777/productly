@@ -1,8 +1,10 @@
 .strategies {
   padding: 30px 0 96px;
+
   @include media($tablet) {
     padding: 53px 0 49px;
   }
+
   @include media($mobile) {
     padding: 63px 0 40px;
   }
@@ -20,25 +22,30 @@
 }
 .strategies__tags {
   margin: 0 0 31px;
+
   @include media($tablet) {
     margin: 0 0 50px;
   }
+
   @include media($mobile) {
     margin: 0 0 34px;
   }
 }
 .strategies__container {
   gap: 30px;
+
   @include media($tablet) {
     > * {
       flex-basis: 42%;
     }
   }
+
   @include media($mobile) {
+    gap: 21px;
+
     > * {
       flex-basis: 100%;
     }
-    gap: 21px;
   }
 }
 .strategy {
@@ -56,14 +63,17 @@
 .strategy__img {
   border-radius: 9px 9px 0 0;
   margin: 0 0 24px;
+
   @include media(1435px) {
     width: 100%;
   }
+
   @include media($tablet) {
     margin: 0 0 27px;
     max-width: 323px;
     width: auto;
   }
+
   @include media($mobile) {
     width: 333px;
     max-width: initial;
@@ -73,6 +83,7 @@
 }
 .strategy__img_long {
   display: flex;
+
   & .image4_long {
     width: inherit;
   }
@@ -80,23 +91,27 @@
 .strategy__title {
   margin: 0 0 32px;
   max-width: 310px;
+
   @include media($tablet) {
     margin: 0 0 25px;
     max-width: 265px;
     text-align: left;
     flex-grow: 1;
   }
+
   @include media($mobile) {
     margin: 0 10px 35px 0;
   }
 }
 .strategy__title_long {
   max-width: 719px;
+
   @include media($tablet) {
     max-width: 265px;
     overflow: hidden;
     max-height: 94px;
   }
+
   @include media($mobile) {
     max-height: 68px;
   }
@@ -105,6 +120,7 @@
 .strategy__tags {
   margin: 0 0 26px 33px;
   align-self: flex-start;
+  
   @include media($tablet) {
     margin-bottom: 24px;
   }
