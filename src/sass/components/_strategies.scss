@@ -56,9 +56,13 @@
 .strategy__img {
   border-radius: 9px 9px 0 0;
   margin: 0 0 24px;
+  @include media(1435px) {
+    width: 100%;
+  }
   @include media($tablet) {
     margin: 0 0 27px;
     max-width: 323px;
+    width: auto;
   }
   @include media($mobile) {
     width: 333px;
@@ -69,6 +73,9 @@
 }
 .strategy__img_long {
   display: flex;
+  & .image4_long {
+    width: inherit;
+  }
 }
 .strategy__title {
   margin: 0 0 32px;
@@ -81,7 +88,6 @@
   }
   @include media($mobile) {
     margin: 0 10px 35px 0;
-
   }
 }
 .strategy__title_long {

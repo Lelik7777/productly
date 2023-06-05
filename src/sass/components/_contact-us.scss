@@ -1,3 +1,48 @@
-.contact-us{
+.contact-us {
   background-color: $color-background;
+}
+
+.contact-us__title {
+  padding: 63px 0 17px;
+}
+
+.contact-us__text {
+  max-width: 527px;
+  margin: 0 0 33px;
+}
+.contact-us__contacts {
+  display: flex;
+  gap: 19px;
+  flex-flow: column;
+  @include font(2.5rem, 2.6rem);
+  color: $color-text;
+  & a {
+    text-decoration: none;
+  }
+}
+.contact {
+  display: flex;
+  gap: 11px;
+}
+.contact-us__form textarea{
+  padding: 9px 0 0 18px;
+  width: 100%;
+  max-height: 150px;
+  margin:  0 0 20px;
+}
+.form__inputs{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 18px;
+  gap:17px;
+  >*{
+    padding: 10px 23px 9px 21px;
+    flex-grow:1;
+  }
+}
+.form__buttons{
+  margin: 0 0 82px;
+}
+.form__button{
+  padding: 9px 36px  18px;
 }
