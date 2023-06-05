@@ -30,3 +30,9 @@
     flex-basis: $width;
   }
 }
+
+@mixin hover(){
+  @media (hover:hover) {
+    @content;
+  }
+}
