@@ -25,6 +25,7 @@
     margin: 0 0 26px;
   }
 }
+
 .contact-us__container {
   @include media($tablet) {
     gap: 53px;
@@ -37,6 +38,7 @@
     gap: 41px;
   }
 }
+
 .contact-us__contacts {
   display: flex;
   gap: 19px;
@@ -56,10 +58,13 @@
     color: inherit;
   }
 }
+
 .contact {
   display: flex;
   gap: 11px;
 }
+
+//form
 //textarea
 .contact-us__form textarea {
   padding: 9px 0 0 18px;
@@ -75,6 +80,7 @@
     margin: 0 0 20px;
   }
 }
+
 .form__inputs {
   display: flex;
   justify-content: space-between;
@@ -95,6 +101,7 @@
     flex-wrap: wrap;
   }
 }
+
 .form__buttons {
   margin: 0 0 82px;
 
@@ -107,9 +114,10 @@
     margin: 0 0 45px;
   }
 }
+
 .form__button {
   padding: 16px 36px 15px;
-  
+
   @include media($mobile) {
     padding: 15px 67px 16px;
   }

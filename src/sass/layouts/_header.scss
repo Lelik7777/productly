@@ -7,6 +7,7 @@
     padding: 21px 0;
   }
 }
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -20,6 +21,7 @@
     padding-left: 21px;
   }
 }
+
 .header__logo {
   display: flex;
   align-items: center;
@@ -32,16 +34,18 @@
     gap: 61px;
   }
 }
+
 .icon-logo {
   @include media($mobile) {
     width: 158px;
   }
+  &:hover {
+    filter: invert(69%) sepia(44%) saturate(4334%) hue-rotate(359deg)
+      brightness(101%) contrast(103%);
+    @extend %transition;
+  }
 }
-.icon-logo:hover {
-  filter: invert(69%) sepia(44%) saturate(4334%) hue-rotate(359deg)
-    brightness(101%) contrast(103%);
-  @extend %transition;
-}
+
 .header__navigation {
   margin-right: 42px;
 
@@ -49,10 +53,11 @@
     display: none;
   }
 }
+
 .header__buttons {
   display: flex;
   gap: 14px;
-  
+
   @include media($mobile) {
     display: none;
   }

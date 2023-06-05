@@ -8,6 +8,7 @@ $icons-tools: (
 .icon {
   cursor: pointer;
 }
+
 .icon-video {
   display: inline-block;
   width: 20px;
@@ -15,11 +16,13 @@ $icons-tools: (
   background-image: url("../assets/icons/icon_video.svg");
   margin-right: 2px;
 }
+
 .icon-square {
   display: inline-flex;
   width: 50px;
   height: 50px;
   border-radius: 19px;
+
   @each $key, $value in $icons-tools {
     &_#{$key} {
       background-color: $value;
@@ -29,12 +32,14 @@ $icons-tools: (
     }
   }
 }
+
 .icon-round {
   width: 25px;
   height: 25px;
   display: inline-block;
   border-radius: 25px;
   background-color: $color-light;
+  
   @each $icon in phone, Union {
     &_#{$icon} {
       background-image: url("../assets/icons/#{$icon}.svg");

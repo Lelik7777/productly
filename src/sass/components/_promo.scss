@@ -10,6 +10,7 @@
     padding: 12px 0 49px;
   }
 }
+
 .promo__wrapper {
   display: flex;
   justify-content: space-between;
@@ -23,6 +24,7 @@
     flex-flow: column-reverse;
   }
 }
+
 .promo__content {
   max-width: 550px;
   padding-top: 83px;
@@ -38,6 +40,7 @@
     text-align: center;
   }
 }
+
 .promo__title {
   margin: 0 0 30px;
 
@@ -49,6 +52,7 @@
     margin: 0 0 9px;
   }
 }
+
 .promo__text {
   max-width: 487px;
   @extend %font-secondary;
@@ -60,6 +64,7 @@
     margin: 0 0 30px;
   }
 }
+
 .promo__buttons {
   display: flex;
   gap: 53px;
@@ -70,6 +75,7 @@
   gap:27px;
   }
 }
+
 .promo__button {
   padding: 15px 40px;
 }
@@ -80,11 +86,12 @@
     justify-content: center;
   }
 }
+
 .image-promo {
   @include media($tablet) {
     max-width: 592px;
   }
-  
+
   @include media($mobile) {
     max-width: 280px;
   }

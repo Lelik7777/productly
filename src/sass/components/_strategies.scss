@@ -9,17 +9,21 @@
     padding: 63px 0 40px;
   }
 }
+
 .strategies__wrapper {
   @include media($tablet) {
     text-align: center;
   }
 }
+
 .strategies__title {
   margin: 0 0 14px;
 }
+
 .strategies__text {
   margin: 0 0 24px;
 }
+
 .strategies__tags {
   margin: 0 0 31px;
 
@@ -31,6 +35,7 @@
     margin: 0 0 34px;
   }
 }
+
 .strategies__container {
   gap: 30px;
 
@@ -48,6 +53,8 @@
     }
   }
 }
+
+//strategy
 .strategy {
   display: flex;
   flex-direction: column;
@@ -81,6 +88,7 @@
     margin: 0 0 28px;
   }
 }
+
 .strategy__img_long {
   display: flex;
 
@@ -88,6 +96,7 @@
     width: inherit;
   }
 }
+
 .strategy__title {
   margin: 0 0 32px;
   max-width: 310px;
@@ -103,6 +112,7 @@
     margin: 0 10px 35px 0;
   }
 }
+
 .strategy__title_long {
   max-width: 719px;
 
@@ -120,7 +130,7 @@
 .strategy__tags {
   margin: 0 0 26px 33px;
   align-self: flex-start;
-  
+
   @include media($tablet) {
     margin-bottom: 24px;
   }
