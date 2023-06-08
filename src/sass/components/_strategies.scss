@@ -139,3 +139,31 @@
     margin-bottom: 24px;
   }
 }
+
+//styles for modal strategy
+.article__content {
+  color: $color-titles;
+  padding: 25px 34px 41px 41px;
+
+  @include media($mobile) {
+    padding: 17px 28px 242px 30px;
+  }
+}
+
+.article__img {
+  width: 100%;
+  max-height: 357px;
+}
+
+.article__date {
+  @include font(1.3rem);
+}
+
+.article__title {
+  margin: 0 0 9px;
+  max-width: 100%;
+}
+
+.article__text {
+  margin: 0 0 12px;
+}
