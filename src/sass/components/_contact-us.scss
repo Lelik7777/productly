@@ -4,45 +4,121 @@
 
 .contact-us__title {
   padding: 63px 0 17px;
+
+  @include media($tablet) {
+    padding: 48px 0 17px;
+    text-align: center;
+  }
+
+  @include media($mobile) {
+    padding: 34px 0 8px;
+  }
 }
 
 .contact-us__text {
   max-width: 527px;
   margin: 0 0 33px;
+
+  @include media($tablet) {
+    max-width: 671px;
+    text-align: center;
+    margin: 0 0 26px;
+  }
 }
+
+.contact-us__container {
+  @include media($tablet) {
+    gap: 53px;
+    > * {
+      flex-basis: 100%;
+    }
+  }
+
+  @include media($mobile) {
+    gap: 41px;
+  }
+}
+
 .contact-us__contacts {
   display: flex;
   gap: 19px;
   flex-flow: column;
   @include font(2.5rem, 2.6rem);
   color: $color-text;
+
+  @include media($tablet) {
+    align-items: center;
+  }
+  @include media($mobile) {
+    @include font(2rem);
+  }
+
   & a {
     text-decoration: none;
+    color: inherit;
   }
 }
+
 .contact {
   display: flex;
   gap: 11px;
 }
-.contact-us__form textarea{
+
+//form
+//textarea
+.contact-us__form textarea {
   padding: 9px 0 0 18px;
   width: 100%;
   max-height: 150px;
-  margin:  0 0 20px;
+  margin: 0 0 18px;
+
+  @include media($tablet) {
+    margin: 0 0 26px;
+  }
+
+  @include media($mobile) {
+    margin: 0 0 20px;
+  }
 }
-.form__inputs{
+
+.form__inputs {
   display: flex;
   justify-content: space-between;
   margin: 0 0 18px;
-  gap:17px;
-  >*{
+  gap: 17px;
+
+  //inputs
+  > * {
     padding: 10px 23px 9px 21px;
-    flex-grow:1;
+    flex-grow: 1;
+
+    &:focus {
+      outline: 1px solid $color-primary;
+    }
+  }
+
+  @include media($mobile) {
+    flex-wrap: wrap;
   }
 }
-.form__buttons{
+
+.form__buttons {
   margin: 0 0 82px;
+
+  @include media($tablet) {
+    margin: 0 0 55px;
+    text-align: center;
+  }
+
+  @include media($mobile) {
+    margin: 0 0 45px;
+  }
 }
-.form__button{
-  padding: 9px 36px  18px;
+
+.form__button {
+  padding: 16px 36px 15px;
+
+  @include media($mobile) {
+    padding: 15px 67px 16px;
+  }
 }

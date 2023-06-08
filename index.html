@@ -135,7 +135,7 @@
             Join 40,000+ other marketers and get proven strategies on email
             marketing
           </div>
-          <div class="tags strategies__tags">
+          <div class="tags strategies__tags tags-js">
             <span class="tag tag_colored">All</span>
             <span class="tag tag_bordered">Art</span>
             <span class="tag tag_bordered">Culture</span>
@@ -332,7 +332,7 @@
       <section class="contact-us">
         <div class="wrapper contact-us__wrapper">
           <h2 class="contact-us__title">Contact Us</h2>
-          <div class="layout-2-columns">
+          <div class="layout-2-columns contact-us__container">
             <div class="contact-us__content">
               <p class="contact-us__text">
                 Your About Us page is vital. It’s often the first stop in any
@@ -368,7 +368,10 @@
                 placeholder="How are you doing?"
               ></textarea>
               <div class="form__buttons">
-                <button type="submit" class="button button_colored form__button">
+                <button
+                  type="submit"
+                  class="button button_colored form__button"
+                >
                   Send
                 </button>
               </div>
@@ -381,7 +384,7 @@
       <div class="wrapper footer__wrapper">
         <div class="footer__logo">
           <object
-            class="icon-logo"
+            class="icon-logo logo-footer"
             data="./src/assets/icons/Logo.svg"
             type="image/svg+xml"
           >
@@ -403,8 +406,7 @@
             <ul class="links">
               <li><a href="#" class="links__item">Disclaimer</a></li>
               <li><a href="#" class="links__item">Financing</a></li>
-              <li><a href="#" class="links__item">Privacy</a></li>
-              <li><a href="#" class="links__item">Policy</a></li>
+              <li><a href="#" class="links__item">Privacy Policy</a></li>
               <li><a href="#" class="links__item">Terms of Service</a></li>
             </ul>
           </div>
@@ -420,5 +422,36 @@
         </div>
       </div>
     </footer>
+    <div class="overlay">
+      <div class="modal">
+        <span class="modal__button_close icon icon-close"></span>
+        <div class="modal__content">
+          <div class="modal__article">
+            <img
+              src="./src/assets/images/strategies/strategy_1.jpg"
+              alt="strategy1"
+              class="article__img"
+            />
+            <div class="article__content">
+              <div class="article__date">12/12/2020</div>
+              <h3 class="article__title strategy__title">
+                Motivation Is The First Step To Success
+              </h3>
+              <div class="article__text">
+                Knowing yourself is the first, and a very critical step in the
+                process of planning your future. How can you figure out what you
+                want to do with your life if you don’t know: What am I going to
+                do with the rest of my life? What is my dream job? What do I
+                enjoy doing? What’s my passion? What kind of career fits my
+                personality?
+              </div>
+              <div class="article__tags tags">
+                <span class="tag  tag_bordered">Culture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

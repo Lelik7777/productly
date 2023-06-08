@@ -9,8 +9,15 @@
     background-color: $color-primary;
     color: $color-light;
     border-color: $color-primary;
-    &:hover {
-      background-color: $color-secondary;
+
+    // &:hover {
+    //   background-color: $color-secondary;
+    // }
+
+    @include hover {
+      &:hover {
+        background-color: $color-secondary;
+      }
     }
   }
 
@@ -18,6 +25,7 @@
     color: $color-button;
     background-color: $color-light;
     border-color: $color-hover-header;
+
     &:hover {
       background-color: $color-hover-header;
     }
@@ -29,10 +37,11 @@
   color: $color-primary;
   @include font($height: 2.4rem, $weight: 600);
   @extend %font-secondary;
-    
+
   &:hover {
     color: $color-secondary;
     text-decoration: underline;
+    
     .icon-video {
       background-image: url("../assets/icons/icon_video_hover.svg");
     }

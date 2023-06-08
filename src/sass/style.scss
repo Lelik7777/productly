@@ -10,11 +10,13 @@
 @import "./base/tags";
 @import "./base/hamburger";
 @import "./base/switchers";
+@import "./base/modal";
 
 @import "./layouts/wrapper";
 @import "./layouts/header";
 @import "./layouts/navigation";
 @import "./layouts/columns";
+@import "./layouts/footer";
 
 @import "./components/promo";
 @import "./components/tools";
