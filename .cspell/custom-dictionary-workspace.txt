@@ -1,3 +1,6 @@
 # Custom Dictionary Words
+button_bordered
 button_colored
 button_colored;
+tag_bordered;
+tag_colored

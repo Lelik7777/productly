@@ -7,6 +7,7 @@ html {
   @include font();
   @extend %font-primary;
   color: $color-text;
+  @extend %custom-scroll;
 }
 
 h1,

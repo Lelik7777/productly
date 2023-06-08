@@ -39,7 +39,7 @@ $icons-tools: (
   display: inline-block;
   border-radius: 25px;
   background-color: $color-light;
-  
+
   @each $icon in phone, Union {
     &_#{$icon} {
       background-image: url("../assets/icons/#{$icon}.svg");
@@ -47,4 +47,11 @@ $icons-tools: (
       background-position: center;
     }
   }
+}
+
+.icon-close {
+  display: inline-block;
+  width: 21px;
+  height: 22px;
+  background-image: url(../assets/icons/close-ico.svg);
 }
