@@ -4,7 +4,7 @@ import img3 from '../assets/images/strategies/strategy_3.jpg';
 import img4 from '../assets/images/strategies/strategy_4_tablet.jpg';
 import img5 from '../assets/images/strategies/strategy_5.jpg';
 
-export const data = [
+export const DATA = [
   {
     id: 1,
     title: "Increasing Prosperity With Positive Thinking",
