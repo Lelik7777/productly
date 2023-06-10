@@ -3,6 +3,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -15,16 +16,29 @@ const config = {
   devtool: "source-map",
   output: {
     path: path.resolve(__dirname, "dist"),
+    //assetModuleFilename: 'images/[hash][ext][query]',
+
   },
   devServer: {
     open: true,
     host: "localhost",
+    port:5000,
+    hot:true,
+
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
     }),
-
+    // new CopyPlugin({
+    //   patterns: [
+    //       {
+    //         from: path.resolve(__dirname, 'src/images'),
+    //         to:   path.resolve(__dirname, 'dist/images'),
+    //         noErrorOnMissing:true,
+    //       }
+    //     ]
+    //   })
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],

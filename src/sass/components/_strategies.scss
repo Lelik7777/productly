@@ -104,12 +104,12 @@
 .strategy__title {
   margin: 0 0 32px;
   max-width: 310px;
+  flex-grow: 1;
 
   @include media($tablet) {
     margin: 0 0 25px;
     max-width: 265px;
     text-align: left;
-    flex-grow: 1;
   }
 
   @include media($mobile) {
