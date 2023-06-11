@@ -10,6 +10,7 @@ const DOM_SELECTORS = {
   TOOLS_BUTTONS: ".tools__buttons",
   OVERLAY: ".overlay",
   MODEL_CLOSE_BUTTON: ".modal__button_close",
+  BLOCK_SHADOWED: ".block-shadowed",
 };
 
 const CONSTANTS = {

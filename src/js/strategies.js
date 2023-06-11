@@ -50,7 +50,11 @@ const showAllStrategies = () => {
 };
 
 const filterStrategiesByClickedTag = (selectedTag) => {
-  _arrayStrategies.forEach((strategy) => {
+  const arrayStrategies = UTILS.getElementsFromDom(
+    `${DOM_SELECTORS.STRATEGIES_CONTAINER} ${DOM_SELECTORS.STRATEGY}`
+  );
+
+  arrayStrategies.forEach((strategy) => {
     strategy.classList.add(hidden);
 
     const arrayTagsStrategy = UTILS.getElementsFromDom(

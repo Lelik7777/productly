@@ -8,4 +8,5 @@ export const UTILS = {
   deletePointFromSelector(selector) {
     return selector.replace(/\./g, "");
   },
+
 };
