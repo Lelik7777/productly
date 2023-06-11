@@ -1,4 +1,4 @@
-export const DOM_SELECTORS = {
+const DOM_SELECTORS = {
   STRATEGIES_TAGS: ".strategies__tags",
   TAG_COLORED: ".tag_colored",
   TAG_BORDERED: ".tag_bordered",
@@ -7,9 +7,14 @@ export const DOM_SELECTORS = {
   STRATEGY: ".strategy",
   STRATEGY_TAGS: ".strategY__tags",
   STRATEGY_HIDDEN: ".strategy_hidden",
+  TOOLS_BUTTONS: ".tools__buttons",
+  OVERLAY: ".overlay",
+  MODEL_CLOSE_BUTTON: ".modal__button_close",
 };
 
-export const CONSTANTS = {
+const CONSTANTS = {
   CLICK: "click",
   ALL: "all",
 };
+
+export { DOM_SELECTORS, CONSTANTS };
