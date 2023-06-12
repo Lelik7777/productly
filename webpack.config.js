@@ -3,7 +3,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -16,29 +17,37 @@ const config = {
   devtool: "source-map",
   output: {
     path: path.resolve(__dirname, "dist"),
-    //assetModuleFilename: 'images/[hash][ext][query]',
-
+    assetModuleFilename: "images/[hash][ext][query]",
   },
   devServer: {
     open: true,
     host: "localhost",
-    port:5000,
-    hot:true,
-
+    port: 5000,
+    hot: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
     }),
-    // new CopyPlugin({
-    //   patterns: [
-    //       {
-    //         from: path.resolve(__dirname, 'src/images'),
-    //         to:   path.resolve(__dirname, 'dist/images'),
-    //         noErrorOnMissing:true,
-    //       }
-    //     ]
-    //   })
+    //! использую copy plugin для динамической отрисовки картинок через js
+    new CopyPlugin({
+      patterns: [
+        {
+          //! могу ,прописав путь, брать только тот контент в сборку,который нужен
+          from: path.resolve(
+            __dirname,
+            "src",
+            "assets",
+            "images",
+            "strategies"
+          ),
+          //! нужно помнить,что именно этот путь нужно указывать в файле с данными  imgUrl: './assets/nameImage.jpg
+          to: path.resolve(__dirname, "dist", "assets"),
+          noErrorOnMissing: true,
+        },
+      ],
+    }),
+    new CleanWebpackPlugin(),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],

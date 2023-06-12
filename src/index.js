@@ -1,13 +1,12 @@
 import { addTagClickHandler } from "./js/strategies";
-import { Modal } from "./js/Modal";
+import { renderStrategiesInDom } from "./js/strategy";
+import { renderToolsModal } from "./js/tools";
+import { DATA } from "./js/data";
 
 window.addEventListener("load", function () {
+  DATA && renderStrategiesInDom(DATA);
   addTagClickHandler();
-  renderStrategyModal("content for modal");
+  renderToolsModal("content for tools  modal");
 });
 
-const renderStrategyModal = (content) => {
-  const modalStrategy = new Modal('modal','modal__strategy');
-  modalStrategy.buildModal(content);
-  console.log('render modal');
-};
+
