@@ -15,6 +15,7 @@ export const DATA = [
     id: 1,
     title: "Increasing Prosperity With Positive Thinking",
     //urlToImage: img1,
+    //путь прописывается, исходя из расположения файла в бандле(directory dist)
     urlToImage:'./assets/strategy_1.jpg' ,
     tags: ["Art", "Design"],
     content:
@@ -46,7 +47,7 @@ export const DATA = [
     title:
     "Success Steps For Your Personal Or Business Life Plus Funny Image on the Back",
     // urlToImage: img4,
-    //urlToImage:'./assets/strategy_4_376.jpg',
+    urlToImage:'./assets/strategy_4_376.jpg',
     tags: ["Culture", "Design", "Art"],
     content:
     "Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?",
@@ -89,13 +90,14 @@ export const DATA = [
     urlToImage:'./assets/strategy_3.jpg' ,
     tags: ["Culture", "Design", "Art"],
     content:
-      "Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?",
+    "Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?",
     date: "01.01.2020",
   },
   {
     id: 9,
     title: "Increasing Prosperity With Positive Thinking",
     //urlToImage: img5,
+    urlToImage:'./assets/strategy_4_376.jpg' ,
     tags: ["Design"],
     content:
       "Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?",

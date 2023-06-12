@@ -17,6 +17,21 @@ const DOM_SELECTORS = {
 const CONSTANTS = {
   CLICK: "click",
   ALL: "all",
+  DIV: "div",
+  IMG: "img",
+  SPAN:'span',
+  H3: "h3",
+  TAGS: "tags",
+  TAG: "tag",
+  TAG_BORDERED: "tag_bordered",
+  MODAL_ARTICLE: "modal__article",
+  ARTICLE_IMAGE: "article__img",
+  STRATEGY_TITLE: "strategy__title",
+  ARTICLE_CONTENT:"article__content",
+  ARTICLE_DATE:"article__date",
+  ARTICLE_TITLE:"article__title",
+  ARTICLE_TEXT:"article__text",
+  ARTICLE_TAGS:"article__tags",
 };
 
 export { DOM_SELECTORS, CONSTANTS };

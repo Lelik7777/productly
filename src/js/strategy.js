@@ -22,18 +22,23 @@ const generateArticle = (dataStrategy) => {
   return new Article(dataStrategy);
 };
 
-//? open strategy modal window
+//? open modal by clicking on strategy
 const addStrategyClickHandler = () => {
   UTILS.getElementsFromDom(
     `${DOM_SELECTORS.STRATEGIES_CONTAINER} ${DOM_SELECTORS.STRATEGY}`
   ).forEach((strategy) => {
-    strategy.addEventListener(CONSTANTS.CLICK, () => {
-      strategy && openModalArticle();
+    strategy.addEventListener(CONSTANTS.CLICK, (e) => {
+      openStrategyModal(
+        DATA[e.target.closest(DOM_SELECTORS.STRATEGY).dataset.id - 1]
+      );
     });
   });
 };
 
-const openModalArticle = () => {
-  const modalArticle = new ModalArticle(DATA, DOM_SELECTORS.MODAL_ARTICLE);
-  modalArticle.renderModal();
+const openStrategyModal = (data) => {
+  const modal = "modal";
+  const ModalStrategy = "modal__strategy";
+
+  const modalWindow = new ModalArticle(data, modal, ModalStrategy);
+  modalWindow.render();
 };
