@@ -4,7 +4,9 @@ import { renderToolsModal } from "./js/tools";
 import { DATA } from "./js/data";
 
 window.addEventListener("load", function () {
-  DATA&&renderStrategiesInDom(DATA);
+  DATA && renderStrategiesInDom(DATA);
   addTagClickHandler();
   renderToolsModal("content for tools  modal");
 });
+
+
