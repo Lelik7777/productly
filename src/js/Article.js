@@ -10,21 +10,7 @@ export class Article {
     this.rest = rest;
     this.buildArticle();
   }
-  // <article class="strategy block-shadowed strategy_none">
-  //             <img
-  //               src="./src/assets/images/strategies/strategy_3.jpg"
-  //               alt="strategy3"
-  //               class="strategy__img"
-  //             />
-  //             <h3 class="strategy__title">
-  //               Success Steps For Your Personal Or Business Life
-  //             </h3>
-  //             <div class="tags strategy__tags">
-  //               <span class="tag tag_selected">Culture</span>
-  //               <span class="tag tag_selected">Design</span>
-  //               <span class="tag tag_selected">Art</span>
-  //             </div>
-  //           </article>
+
 
   buildArticle() {
     const article = "article",
@@ -43,10 +29,14 @@ export class Article {
 
     this.bindElements();
   }
+
   createElement(element, ...classes) {
     const node = document.createElement(element);
     node.classList.add(...classes);
     return node;
+  }
+  createArticle(){
+
   }
   createImage() {
     const strategy = UTILS.deletePointFromSelector(DOM_SELECTORS.STRATEGY),
