@@ -39,6 +39,12 @@
 .strategies__container {
   gap: 30px;
 
+  &:after {
+    content: "";
+    width: 30%;
+    display: flex;
+  }
+
   @include media($tablet) {
     > * {
       flex-basis: 42%;

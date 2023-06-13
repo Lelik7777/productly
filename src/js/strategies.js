@@ -2,12 +2,14 @@ import { CONSTANTS, DOM_SELECTORS } from "./config";
 import { UTILS } from "./utils";
 
 //class names
-const borderedTag = UTILS.deletePointFromSelector(DOM_SELECTORS.TAG_BORDERED);
-const selectedTag = UTILS.deletePointFromSelector(DOM_SELECTORS.TAG_COLORED);
-const hidden = UTILS.deletePointFromSelector(DOM_SELECTORS.STRATEGY_HIDDEN);
+const borderedTag = UTILS.deletePointFromSelector(DOM_SELECTORS.TAG_BORDERED),
+  selectedTag = UTILS.deletePointFromSelector(DOM_SELECTORS.TAG_COLORED),
+  hidden = UTILS.deletePointFromSelector(DOM_SELECTORS.STRATEGY_HIDDEN);
 
 export const addTagClickHandler = () => {
-  const _strategiesTags = UTILS.getElementFromDom(DOM_SELECTORS.STRATEGIES_TAGS);
+  const _strategiesTags = UTILS.getElementFromDom(
+    DOM_SELECTORS.STRATEGIES_TAGS
+  );
 
   _strategiesTags.addEventListener(CONSTANTS.CLICK, (e) => {
     const tag = e.target;
@@ -67,4 +69,3 @@ const filterStrategiesByClickedTag = (selectedTag) => {
     });
   });
 };
-

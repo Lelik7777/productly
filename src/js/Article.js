@@ -10,28 +10,14 @@ export class Article {
     this.rest = rest;
     this.buildArticle();
   }
-  // <article class="strategy block-shadowed strategy_none">
-  //             <img
-  //               src="./src/assets/images/strategies/strategy_3.jpg"
-  //               alt="strategy3"
-  //               class="strategy__img"
-  //             />
-  //             <h3 class="strategy__title">
-  //               Success Steps For Your Personal Or Business Life
-  //             </h3>
-  //             <div class="tags strategy__tags">
-  //               <span class="tag tag_selected">Culture</span>
-  //               <span class="tag tag_selected">Design</span>
-  //               <span class="tag tag_selected">Art</span>
-  //             </div>
-  //           </article>
+
 
   buildArticle() {
-    const article = "article";
-    const strategy = UTILS.deletePointFromSelector(DOM_SELECTORS.STRATEGY);
-    const blockShadowed = UTILS.deletePointFromSelector(
-      DOM_SELECTORS.BLOCK_SHADOWED
-    );
+    const article = "article",
+      strategy = UTILS.deletePointFromSelector(DOM_SELECTORS.STRATEGY),
+      blockShadowed = UTILS.deletePointFromSelector(
+        DOM_SELECTORS.BLOCK_SHADOWED
+      );
 
     this.article = this.createElement(article, strategy, blockShadowed);
     this.article.setAttribute("data-id", this.id);
@@ -39,21 +25,25 @@ export class Article {
     this.createImage();
     this.createTitle();
     this.createTags();
-    this.groupTags= this.tags.map((tag) => this.createTag(tag));
-    
+    this.groupTags = this.tags.map((tag) => this.createTag(tag));
+
     this.bindElements();
   }
+
   createElement(element, ...classes) {
     const node = document.createElement(element);
     node.classList.add(...classes);
     return node;
   }
+  createArticle(){
+
+  }
   createImage() {
-    const strategy = UTILS.deletePointFromSelector(DOM_SELECTORS.STRATEGY);
-    const img = "img";
-    const strategyImage = "strategy__img";
-    const src = "src";
-    const alt = "alt";
+    const strategy = UTILS.deletePointFromSelector(DOM_SELECTORS.STRATEGY),
+      img = "img",
+      strategyImage = "strategy__img",
+      src = "src",
+      alt = "alt";
 
     this.image = this.createElement(img, strategyImage);
     this.image.setAttribute(src, this.urlToImage);
@@ -61,23 +51,23 @@ export class Article {
     return this.image;
   }
   createTitle() {
-    const strategyTitle = "strategy__title";
-    const h3 = "h3";
+    const strategyTitle = "strategy__title",
+      h3 = "h3";
 
     this.articleTitle = this.createElement(h3, strategyTitle);
     this.articleTitle.textContent = this.title;
   }
   createTags() {
-    const tags = "tags";
-    const strategyTags = "strategy__tags";
-    const div = "div";
+    const tags = "tags",
+      strategyTags = "strategy__tags",
+      div = "div";
 
     this.containerTags = this.createElement(div, tags, strategyTags);
   }
   createTag(content) {
-    const span = "span";
-    const tag = "tag";
-    const selectedTag = "tag_selected";
+    const span = "span",
+      tag = "tag",
+      selectedTag = "tag_selected";
 
     this.tag = this.createElement(span, tag, selectedTag);
     this.tag.textContent = content;

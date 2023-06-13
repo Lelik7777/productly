@@ -14,7 +14,8 @@ const stylesHandler = isProduction
 
 const config = {
   entry: ["./src/index.js", "./src/sass/style.scss"],
-  devtool: "source-map",
+  //? мапинг только в режиме разработки
+  devtool: isProduction ? "eval" : "source-map",
   output: {
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "images/[hash][ext][query]",
@@ -33,7 +34,7 @@ const config = {
     new CopyPlugin({
       patterns: [
         {
-          //! могу ,прописав путь, брать только тот контент в сборку,который нужен
+          //! могу ,прописав путь, брать только тот контент в сборку,который нужен:здесь забираются картинки только из папки strategies
           from: path.resolve(
             __dirname,
             "src",
@@ -55,8 +56,9 @@ const config = {
     rules: [
       {
         test: /\.(ts|tsx)$/i,
-        loader: "ts-loader",
+        //loader: "ts-loader",
         exclude: ["/node_modules/"],
+        use:'babel-loader,'
       },
       {
         test: /\.css$/i,

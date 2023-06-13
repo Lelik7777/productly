@@ -7,7 +7,6 @@ export const renderToolsModal = (content) => {
     CONSTANTS.CLICK,
     () => {
       createModal(content);
-
     }
   );
 };
