@@ -41,11 +41,11 @@ export class Modal {
   }
 
   closeModal(e) {
-    const clickedElement = e.target;
-    const overlay = UTILS.deletePointFromSelector(DOM_SELECTORS.OVERLAY);
-    const closeButton = UTILS.deletePointFromSelector(
-      DOM_SELECTORS.MODEL_CLOSE_BUTTON
-    );
+    const clickedElement = e.target,
+      overlay = UTILS.deletePointFromSelector(DOM_SELECTORS.OVERLAY),
+      closeButton = UTILS.deletePointFromSelector(
+        DOM_SELECTORS.MODEL_CLOSE_BUTTON
+      );
 
     (clickedElement.classList.contains(overlay) ||
       clickedElement.classList.contains(closeButton)) &&

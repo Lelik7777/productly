@@ -19,7 +19,7 @@ const CONSTANTS = {
   ALL: "all",
   DIV: "div",
   IMG: "img",
-  SPAN:'span',
+  SPAN: "span",
   H3: "h3",
   TAGS: "tags",
   TAG: "tag",
@@ -27,11 +27,11 @@ const CONSTANTS = {
   MODAL_ARTICLE: "modal__article",
   ARTICLE_IMAGE: "article__img",
   STRATEGY_TITLE: "strategy__title",
-  ARTICLE_CONTENT:"article__content",
-  ARTICLE_DATE:"article__date",
-  ARTICLE_TITLE:"article__title",
-  ARTICLE_TEXT:"article__text",
-  ARTICLE_TAGS:"article__tags",
+  ARTICLE_CONTENT: "article__content",
+  ARTICLE_DATE: "article__date",
+  ARTICLE_TITLE: "article__title",
+  ARTICLE_TEXT: "article__text",
+  ARTICLE_TAGS: "article__tags",
 };
 
 export { DOM_SELECTORS, CONSTANTS };

@@ -1,30 +1,6 @@
 import { Modal } from "./Modal";
 import { CONSTANTS } from "./config";
 
-{
-  /* <div class="modal__article">
-            <img
-              src="./src/assets/images/strategies/strategy_1.jpg"
-              alt="strategy1"
-              class="article__img"
-            />
-            <div class="article__content">
-              <div class="article__date">12/12/2020</div>
-              <h3 class="article__title strategy__title">
-                Motivation Is The First Step To Success
-              </h3>
-              <div class="article__text">
-                Knowing yourself is the first, and a very critical step in the
-                process of planning your future. How can you figure out what you
-                want to do with your life if you don’t know: What am I going to
-                do with the rest of my life? What is my dream job? What do I
-                enjoy doing? What’s my passion? What kind of career fits my
-                personality?
-              </div>
-              <div class="article__tags tags">
-                <span class="tag  tag_bordered">Culture</span>
-              </div> */
-}
 export class ModalArticle extends Modal {
   constructor({ id, title, urlToImage, tags, content, date }, ...classes) {
     super(...classes);
@@ -36,7 +12,6 @@ export class ModalArticle extends Modal {
     this.date = date;
   }
   generateContent() {
-    
     //create different elements for modal content
     this.modalArticle = super.createElement(
       CONSTANTS.DIV,
