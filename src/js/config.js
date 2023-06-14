@@ -12,6 +12,11 @@ const DOM_SELECTORS = {
   OVERLAY: ".overlay",
   MODEL_CLOSE_BUTTON: ".modal__button_close",
   MODAL_ARTICLE: ".modal__article",
+  HAMBURGER: ".hamburger",
+  HEADER_BUTTONS: ".header__buttons",
+  HEADER_NAVIGATION: ".header__navigation",
+  NAVIGATION_ITEMS: ".navigation__items",
+  BODY: ".body",
 };
 
 const CONSTANTS = {
@@ -32,6 +37,12 @@ const CONSTANTS = {
   ARTICLE_TITLE: "article__title",
   ARTICLE_TEXT: "article__text",
   ARTICLE_TAGS: "article__tags",
+  HEADER_NAVIGATION_ACTIVE: "header__navigation_active",
+  HEADER_BUTTONS_ACTIVE: "header__buttons_active",
+  HAMBURGER_ACTIVE: "hamburger_active",
+  OVERLAY: "overlay",
+  BODY_LOCK: "body_lock",
+  NAVIGATION_LINK: "navigation__link",
 };
 
 export { DOM_SELECTORS, CONSTANTS };

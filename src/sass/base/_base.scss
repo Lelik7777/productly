@@ -8,6 +8,10 @@ html {
   @extend %font-primary;
   color: $color-text;
   @extend %custom-scroll;
+
+  &_lock{
+    overflow: hidden;
+  }
 }
 
 h1,

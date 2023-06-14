@@ -17,6 +17,8 @@ $line-height: 3px;
   height: 25px;
   display: none;
   position: relative;
+  cursor: pointer;
+  @extend %transition;
 
   @include media($tablet) {
     display: inline-block;
@@ -26,9 +28,14 @@ $line-height: 3px;
     @extend %line;
     top: 0;
   }
+
   &::after {
     @extend %line;
     bottom: 0;
+  }
+
+  &_active {
+    rotate: 90deg;
   }
 }
 

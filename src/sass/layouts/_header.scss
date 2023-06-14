@@ -28,6 +28,7 @@
 
   @include media($tablet) {
     gap: 37px;
+    z-index: 5;
   }
 
   @include media($mobile) {
@@ -37,7 +38,7 @@
 
 .icon-logo {
   @include media($mobile) {
-    width: 158px;
+    max-width: 158px;
   }
   &:hover {
     filter: invert(69%) sepia(44%) saturate(4334%) hue-rotate(359deg)
@@ -48,17 +49,53 @@
 
 .header__navigation {
   margin-right: 42px;
+  @extend %transition;
 
   @include media($tablet) {
-    display: none;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: min(85%, 342px);
+    height: 100vh;
+    background-color: $color-light;
+    z-index: 4;
+
+    &_active {
+      left: 0;
+    }
+
+    & ul {
+      flex-flow: column;
+      padding: 124px 0 0 55px;
+      @include font(2.2rem, 2.8rem);
+      gap: 34px;
+
+      @include media($mobile) {
+        padding: 122px 0 0 72px;
+      }
+    }
   }
 }
 
 .header__buttons {
   display: flex;
   gap: 14px;
+  @extend %transition;
 
   @include media($mobile) {
-    display: none;
+    position: fixed;
+    flex-flow: column;
+    top: 371px;
+    left: -100%;
+    z-index: 4;
+
+    &_active {
+      left: 72px;
+    }
+
+    & button {
+      padding: 11px 56px;
+    }
   }
 }
