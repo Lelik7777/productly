@@ -59,6 +59,7 @@
     width: min(85%, 342px);
     height: 100vh;
     background-color: $color-light;
+    z-index: 4;
 
     &_active {
       left: 0;
@@ -86,8 +87,12 @@
     position: fixed;
     flex-flow: column;
     top: 371px;
-    left: 72px;
     left: -100%;
+    z-index: 4;
+
+    &_active {
+      left: 72px;
+    }
 
     & button {
       padding: 11px 56px;
