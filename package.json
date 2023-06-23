@@ -1,0 +1,47 @@
+{
+  "name": "productly",
+  "version": "1.0.0",
+  "description": "landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "start": "webpack server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lelik7777/productly.git"
+  },
+  "author": "Lelik7777",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lelik7777/productly/issues"
+  },
+  "homepage": "https://github.com/Lelik7777/productly#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@webpack-cli/generators": "^3.0.4",
+    "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.13.2"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0"
+  }
+}

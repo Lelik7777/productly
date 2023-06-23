@@ -1,0 +1,33 @@
+.tags {
+  display: inline-block;
+
+  > * {
+    margin-right: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.tag {
+  cursor: pointer;
+  @include font(1.3rem, 2.8rem);
+  border-radius: 90px;
+  padding: 4px 14px;
+
+  &_bordered {
+    border: 1px solid $color-tag-border;
+    background-color: $color-light;
+  }
+
+  &_colored {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    color: $color-light;
+  }
+  
+  &_selected {
+    background-color: $color-tag;
+    border: 1px solid $color-tag;
+  }
+}

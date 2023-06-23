@@ -1,0 +1,28 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal {
+  display: block;
+  width: min(675px, 100%);
+  height: max(120px, 70%);
+  background-color: $color-light;
+  position: relative;
+  overflow: auto;
+  @extend %custom-scroll;
+}
+
+.modal__button_close {
+  position: absolute;
+  top: 28px;
+  right: 26px;
+}

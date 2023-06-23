@@ -1,0 +1,21 @@
+.switcher {
+  display: none;
+  width: 8px;
+  height: 8px;
+  border: 1px solid $color-titles;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @include media($tablet) {
+    display: inline-block;
+  }
+
+  &_color {
+    background-color: $color-titles;
+  }
+}
+
+.switchers {
+  display: flex;
+  gap: 5.5px;
+}
