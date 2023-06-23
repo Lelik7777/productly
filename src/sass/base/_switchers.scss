@@ -4,6 +4,7 @@
   height: 8px;
   border: 1px solid $color-titles;
   border-radius: 50%;
+  cursor: pointer;
 
   @include media($tablet) {
     display: inline-block;

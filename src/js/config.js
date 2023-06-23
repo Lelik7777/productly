@@ -17,6 +17,9 @@ const DOM_SELECTORS = {
   HEADER_NAVIGATION: ".header__navigation",
   NAVIGATION_ITEMS: ".navigation__items",
   BODY: ".body",
+  EMPLOYEES_SWITCHERS: ".employees__switches",
+  SWITCHER: ".switcher",
+  ABOUT_US_EMPLOYEES: ".about-us__employees",
 };
 
 const CONSTANTS = {
@@ -43,6 +46,11 @@ const CONSTANTS = {
   OVERLAY: "overlay",
   BODY_LOCK: "body_lock",
   NAVIGATION_LINK: "navigation__link",
+  SWITCHER: "switcher",
+  SWITCHER_LEFT: "switcher_left",
+  SWITCHER_CENTER: "switcher_center",
+  SWITCHER_RIGHT: "switcher_right",
+  SWITCHER_COLOR: "switcher_color",
 };
 
 export { DOM_SELECTORS, CONSTANTS };

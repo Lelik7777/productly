@@ -40,13 +40,13 @@ const addNavigationLinkClickHandler = () => {
   });
 };
 
-const addOverlayClickHandler=()=>{
+const addOverlayClickHandler = () => {
   const _overlay = UTILS.getElementFromDom(DOM_SELECTORS.OVERLAY);
 
   _overlay.addEventListener(CONSTANTS.CLICK, () => {
     closePopup();
   });
-}
+};
 const renderOverlay = () => {
   new Overlay().build();
 };
